@@ -25,7 +25,7 @@ void loop()
   value = constrain(value,0,900);  //Keep the ranges!
   value = map(value,0,900,0,100);  //Map value : 900 will be 100 and 0 will be 0
   Serial.print("moisture level: ");
-  Serial.println(moisture)
+  Serial.println(moisture);
 
   //Start the watering if humidity decrease down of 20%
   if (value < 20){
